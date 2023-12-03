@@ -30,7 +30,4 @@ A Matlab implementation of biquad coefficient generation and real-time block pro
 When compiling the ioc file, the SAI2 synchronization register is incorrectly configured and must be corrected as follows: 
 hsai_BlockA2.Init.Synchro = SAI_SYNCHRONOUS_EXT_SAI1;
 
-Discontinuities occur when using lowshelf, highshelf when block size is large. A smaller block size solves the problem, but its origin is still unknown to me.
-
-
 
